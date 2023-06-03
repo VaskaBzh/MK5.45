@@ -4146,6 +4146,7 @@ html {
   font-size: 18px;
   line-height: 25px;
   color: #000;
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 1279.98px) {

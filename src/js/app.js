@@ -11,5 +11,5 @@ swipersInit()
 rangeInit()
 likeInit()
 filterInit()
-burgerInit();
+burgerInit()
 backLink()
