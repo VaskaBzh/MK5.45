@@ -1,0 +1,16 @@
+.swiper {
+  &-button {
+    &-prev,
+    &-next {
+      svg {
+        width: 12px;
+        height: 27px;
+      }
+
+      &:after,
+      &:before {
+        content: "" !important;
+      }
+    }
+  }
+}

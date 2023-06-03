@@ -1,70 +1,63 @@
 @font-face {
-                                font-family: CormorantSC;
+                                font-family: OpenSans_Condensed;
                                 font-display: swap;
-                                src: url("../fonts/CormorantSC-Bold.woff2") format("woff2"), url("../fonts/CormorantSC-Bold.woff1") format("woff1");
+                                src: url("../fonts/OpenSans_Condensed-Bold.woff2") format("woff2"), url("../fonts/OpenSans_Condensed-Bold.woff1") format("woff1");
                                 font-weight: 700;
                                 font-style: normal;
                             }
 @font-face {
-                                font-family: CormorantSC;
+                                font-family: OpenSans_Condensed;
                                 font-display: swap;
-                                src: url("../fonts/CormorantSC-Light.woff2") format("woff2"), url("../fonts/CormorantSC-Light.woff1") format("woff1");
+                                src: url("../fonts/OpenSans_Condensed-Light.woff2") format("woff2"), url("../fonts/OpenSans_Condensed-Light.woff1") format("woff1");
                                 font-weight: 300;
                                 font-style: normal;
                             }
 @font-face {
-                                font-family: CormorantSC;
+                                font-family: OpenSans_Condensed;
                                 font-display: swap;
-                                src: url("../fonts/CormorantSC-Medium.woff2") format("woff2"), url("../fonts/CormorantSC-Medium.woff1") format("woff1");
+                                src: url("../fonts/OpenSans_Condensed-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans_Condensed-ExtraBold.woff1") format("woff1");
+                                font-weight: 800;
+                                font-style: normal;
+                            }
+@font-face {
+                                font-family: OpenSans_Condensed;
+                                font-display: swap;
+                                src: url("../fonts/OpenSans_Condensed-Medium.woff2") format("woff2"), url("../fonts/OpenSans_Condensed-Medium.woff1") format("woff1");
                                 font-weight: 500;
                                 font-style: normal;
                             }
 @font-face {
-                                font-family: Jura;
+                                font-family: OpenSans_Condensed;
                                 font-display: swap;
-                                src: url("../fonts/Jura-Bold.woff2") format("woff2"), url("../fonts/Jura-Bold.woff1") format("woff1");
+                                src: url("../fonts/OpenSans_Condensed-Regular.woff2") format("woff2"), url("../fonts/OpenSans_Condensed-Regular.woff1") format("woff1");
+                                font-weight: 400;
+                                font-style: normal;
+                            }
+@font-face {
+                                font-family: OpenSans_Condensed;
+                                font-display: swap;
+                                src: url("../fonts/OpenSans_Condensed-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans_Condensed-SemiBold.woff1") format("woff1");
+                                font-weight: 600;
+                                font-style: normal;
+                            }
+@font-face {
+                                font-family: Times;
+                                font-display: swap;
+                                src: url("../fonts/Times.woff2") format("woff2"), url("../fonts/Times.woff1") format("woff1");
+                                font-weight: 400;
+                                font-style: normal;
+                            }
+@font-face {
+                                font-family: OpenSans_SemiCondensed;
+                                font-display: swap;
+                                src: url("../fonts/OpenSans_SemiCondensed-Bold.woff2") format("woff2"), url("../fonts/OpenSans_SemiCondensed-Bold.woff1") format("woff1");
                                 font-weight: 700;
                                 font-style: normal;
                             }
 @font-face {
-                                font-family: CormorantSC;
+                                font-family: OpenSans_SemiCondensed;
                                 font-display: swap;
-                                src: url("../fonts/CormorantSC-Regular.woff2") format("woff2"), url("../fonts/CormorantSC-Regular.woff1") format("woff1");
-                                font-weight: 400;
-                                font-style: normal;
-                            }
-@font-face {
-                                font-family: Jura;
-                                font-display: swap;
-                                src: url("../fonts/Jura-Light.woff2") format("woff2"), url("../fonts/Jura-Light.woff1") format("woff1");
-                                font-weight: 300;
-                                font-style: normal;
-                            }
-@font-face {
-                                font-family: CormorantSC;
-                                font-display: swap;
-                                src: url("../fonts/CormorantSC-SemiBold.woff2") format("woff2"), url("../fonts/CormorantSC-SemiBold.woff1") format("woff1");
-                                font-weight: 600;
-                                font-style: normal;
-                            }
-@font-face {
-                                font-family: Jura;
-                                font-display: swap;
-                                src: url("../fonts/Jura-Medium.woff2") format("woff2"), url("../fonts/Jura-Medium.woff1") format("woff1");
-                                font-weight: 500;
-                                font-style: normal;
-                            }
-@font-face {
-                                font-family: Jura;
-                                font-display: swap;
-                                src: url("../fonts/Jura-SemiBold.woff2") format("woff2"), url("../fonts/Jura-SemiBold.woff1") format("woff1");
-                                font-weight: 600;
-                                font-style: normal;
-                            }
-@font-face {
-                                font-family: Jura;
-                                font-display: swap;
-                                src: url("../fonts/Jura-Regular.woff2") format("woff2"), url("../fonts/Jura-Regular.woff1") format("woff1");
-                                font-weight: 400;
+                                src: url("../fonts/OpenSans_SemiCondensed-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans_SemiCondensed-ExtraBold.woff1") format("woff1");
+                                font-weight: 800;
                                 font-style: normal;
                             }

@@ -1,0 +1,117 @@
+.product_card {
+  .wrapper {
+    padding: 0 147px;
+  }
+  &__main {
+    display: flex;
+    gap: 85px;
+    justify-content: space-between;
+    flex-direction: row;
+    @include md {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .swiper {
+      max-width: 560px;
+      padding-bottom: 100px;
+      margin: 0;
+      max-height: 760px;
+      @include sm {
+        min-height: 540px;
+      }
+      @include xs {
+        min-height: 360px;
+      }
+      &-button-next,
+      &-button-prev {
+        top: calc(760px / 2);
+        @include sm {
+          top: calc(540px / 2);
+        }
+        @include xs {
+          top: calc(360px / 2);
+        }
+      }
+      &-pagination {
+        gap: 10px;
+        left: 0;
+        right: auto;
+        display: flex;
+        align-items: center;
+        &-bullet {
+          width: 80px;
+          height: 80px;
+          border-radius: 0;
+          background: transparent;
+          img {
+            width: 100%;
+            height: 100%;
+            transition: all $transition ease 0s;
+          }
+        }
+      }
+      &-slide {
+        max-height: 660px;
+        img {
+          height: 100%;
+          width: 100%;
+          max-height: 660px;
+        }
+        @include sm {
+          max-height: 540px;
+          img {
+            max-height: 540px;
+          }
+        }
+        @include xs {
+          max-height: 360px;
+          img {
+            max-height: 360px;
+          }
+        }
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    .product {
+      &__select {
+        margin-top: 0;
+      }
+      &__block-buy {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        @include xs {
+          width: 100%;
+          position: relative;
+          display: grid;
+        }
+        .input,
+        .button {
+          max-width: 146px;
+          min-width: 0;
+          width: 100%;
+          @include xs {
+            max-width: 100%;
+          }
+        }
+        .like {
+          @include xs {
+            position: absolute;
+            top: -70px;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,19 @@
+.text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+  &-md {
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+  .wrapper {
+    padding: 0 170px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+}

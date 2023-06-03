@@ -5,9 +5,77 @@
     })
     <body>
         @@include('html/header.html', {
-            "login": false
+            "back": false,
         })
         <main>
+            <section class="hero section">
+                <div class="wrapper">
+                    <div class="hero__main section__main">
+                        <h1 class="title title-h1">
+                            Lorem ipsum
+                            dolor sit amet
+                            consectetur
+                            adipiscing
+                        </h1>
+                        <p class="subtitle">
+                            Lorem ipsum dolor sit amet
+                        </p>
+                        <a href="/catalog.html" class="button">КАТАЛОГ ТОВАРОВ</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section popular">
+                <div class="wrapper">
+                    <div class="section__main">
+                        <h2 class="title title-h2">САМЫЕ ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+                        <div class="catalog">
+                            @@include('html/product.html', {})
+                            @@include('html/product.html', {})
+                            @@include('html/product.html', {})
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about section">
+                <div class="wrapper">
+                    <div class="section__main about__main">
+                        <h2 class="title title-h2">
+                            MK5.45 - это:
+                        </h2>
+                        <div class="list">
+                            <div class="list__column">
+                                <div class="list_item">
+                                    <span class="number">1</span>
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                                <div class="list_item">
+                                    <span class="number">3</span>
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                                <div class="list_item">
+                                    <span class="number">5</span>
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                            </div>
+                            <div class="list__column">
+                                <div class="list_item">
+                                    <span class="number">2</span>
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                                <div class="list_item">
+                                    <span class="number">4</span>
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                                <div class="list_item">
+                                    <span class="number">6</span>
+                                    Lorem ipsum dolor sit amet
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            @@include('html/questions.html', {})
         </main>
         @@include('html/footer.html', {})
         <script src="js/app.min.js"></script>

@@ -1,0 +1,18 @@
+.ui {
+  &-slider {
+    height: 2px !important;
+    border: transparent !important;
+    background: $grayLigth;
+    &-range {
+      background: $like;
+      height: 2px !important;
+    }
+    &-handle {
+      border-radius: 50%;
+      background: rgba($grayLigth, 0.1);
+      border: 2px solid $white;
+      top: 50% !important;
+      transform: translateY(-50%);
+    }
+  }
+}

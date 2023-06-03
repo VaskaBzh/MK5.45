@@ -1,0 +1,23 @@
+.questions {
+  padding: 65px 20px;
+  background-image: url('../../img/questions_img-back.png');
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 50% 100%;
+  @include md {
+    background-image: none;
+    padding: 0;
+  }
+  .section__main {
+    align-items: flex-end;
+  }
+  &__main {
+    padding: 0 40px;
+    max-width: calc(50%);
+    width: 100%;
+    @include md {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}

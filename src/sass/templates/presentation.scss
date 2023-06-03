@@ -1,0 +1,17 @@
+.presentation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  background: $grayLigth;
+  .title {
+    font-size: 96px;
+    line-height: 131px;
+    text-align: center;
+    @include sm {
+      font-size: 72px;
+      line-height: 113px;
+    }
+  }
+}

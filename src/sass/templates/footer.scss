@@ -1,3 +1,28 @@
 .footer {
-  
+  min-height: 440px;
+  padding: 121px 0 103px;
+  @include md {
+    padding: 30px 0;
+    min-height: 0;
+  }
+  .wrapper {
+    max-width: 1186px;
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: center;
+    @include md {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }

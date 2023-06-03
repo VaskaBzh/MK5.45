@@ -1,0 +1,71 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 280px;
+  width: 100%;
+  .cross {
+    display: none;
+  }
+  @include md {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 60px 20px 80px;
+    max-width: 30%;
+    transform: translateX(-100%);
+    z-index: 100;
+    background: $white;
+    transition: all $transition ease 0s;
+    .cross {
+      display: inline-flex;
+      left: 20px;
+      top: 20px;
+      width: 24px;
+      height: 24px;
+      position: fixed;
+      transform: translateX(-100%);
+      transition: all $transition ease 0s;
+    }
+    &.active {
+      transform: translateX(0);
+      .cross {
+        transform: translateX(0);
+      }
+    }
+  }
+  @include xs {
+    max-width: 90%;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__inputs {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    color: $gray;
+    input {
+      width: 100%;
+      min-height: 30px;
+      padding:  0 10px;
+      display: inline-flex;
+      align-items: center;
+      background: $grayBack;
+      border: 1px solid $gray;
+      border-radius: 4px;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: -0.015em;
+      outline: none;
+    }
+  }
+  .subtitle {
+    margin-bottom: 1px;
+  }
+}

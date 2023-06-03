@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+  "title": "Карточка товара",
+  })
+<body>
+@@include('html/header.html', {
+  "back": true,
+})
+<main>
+  <section class="product_card section">
+    <div class="wrapper">
+      <div class="section__main product_card__main">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="@img/slide_img.png" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="@img/slide_img.png" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="@img/slide_img.png" alt="slide">
+            </div>
+            <div class="swiper-slide">
+              <img src="@img/slide_img.png" alt="slide">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <svg width="13" height="27" viewBox="0 0 13 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.300499 14.4164C-0.100166 13.9099 -0.100166 13.0915 0.300499 12.5836L9.80962 0.549658C10.388 -0.183219 11.3291 -0.183219 11.9085 0.549658C12.4869 1.28253 12.4869 2.47198 11.9085 3.20486L3.77396 13.5007L11.9085 23.7938C12.4869 24.528 12.4869 25.7175 11.9085 26.4503C11.3291 27.1832 10.388 27.1832 9.80962 26.4503L0.300499 14.4164Z" fill="black"/>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg width="13" height="27" viewBox="0 0 13 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0418 12.5836C12.4425 13.0901 12.4425 13.9085 12.0418 14.4164L2.53266 26.4503C1.95426 27.1832 1.01321 27.1832 0.43379 26.4503C-0.144607 25.7175 -0.144607 24.528 0.43379 23.7951L8.56833 13.4993L0.43379 3.20617C-0.144607 2.47198 -0.144607 1.28253 0.43379 0.549656C1.01321 -0.183222 1.95426 -0.183222 2.53266 0.549656L12.0418 12.5836Z" fill="black"/>
+            </svg>
+          </div>
+        </div>
+        <div class="product_card__content">
+          <div class="product_card__block">
+            <p class="subtitle subtitle-lg">НАИМЕНОВАНИЕ ПОЗИЦИИ ЦВЕТ “НАЗВАНИЕ ПОЗИЦИИ”</p>
+            <p class="product_article">Артикул: ХХ123456789</p>
+            <p class="product_price">
+              1 990 р.   <span>2200 р.</span>
+            </p>
+          </div>
+          <div class="product__select">
+            <span class="text">Рзамер</span>
+            <select class="select">
+              <option selected value="L (48)">L (48)</option>
+              <option selected value="L (481)">L (481)</option>
+              <option selected value="L (4812)">L (4812)</option>
+              <option selected value="L (48123)">L (48123)</option>
+            </select>
+          </div>
+          <div class="product__block product__block-buy">
+            <div class="input input-number">
+              <span>-</span>
+              <input type="text" value="1" placeholder="1">
+              <span>+</span>
+            </div>
+            <button class="button button-reverce">КУПИТЬ</button>
+            <div class="like">
+              <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.27 1.00001C15.3228 1.00382 14.3913 1.2424 13.5589 1.69438C12.7265 2.14637 12.0191 2.79767 11.5 3.59001C10.8201 2.56838 9.83008 1.79205 8.67581 1.37529C7.52153 0.958527 6.26395 0.923362 5.08819 1.27497C3.91243 1.62658 2.88062 2.34638 2.14465 3.32841C1.40868 4.31045 1.00744 5.50282 1 6.73001C1 15.32 11.5 19.09 11.5 19.09C11.5 19.09 22 15.32 22 6.73001C22.0013 5.97716 21.854 5.23147 21.5665 4.53568C21.279 3.83988 20.857 3.20769 20.3247 2.67535C19.7923 2.14301 19.1601 1.72099 18.4643 1.4335C17.7685 1.146 17.0228 0.998691 16.27 1.00001Z" stroke-width="1.91" stroke-miterlimit="10"/>
+              </svg>
+            </div>
+          </div>
+          <div class="text-block text-block-md">
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section also">
+    <div class="wrapper">
+      <div class="section__main also__main">
+        <h1 class="title title-h1">СМОТРИТЕ ТАКЖЕ</h1>
+        <div class="catalog">
+          @@include('html/product.html', {})
+          @@include('html/product.html', {})
+          @@include('html/product.html', {})
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+@@include('html/footer.html', {})
+<script src="js/app.min.js"></script>
+</body>
+</html>

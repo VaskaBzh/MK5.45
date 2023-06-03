@@ -1,0 +1,32 @@
+.button {
+  min-height: 60px;
+  background: $black;
+  color: $white;
+  border-radius: 30px;
+  min-width: 200px;
+  padding: 2px 40px;
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  @include md {
+    min-height: 40px;
+    padding: 2px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  &-reverce {
+    background: $white;
+    border: 2px solid $black;
+    color: $black;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    "title": "Отзывы",
+  })
+<body>
+@@include('html/header.html', {
+"back": false,
+})
+<main>
+  <section class="section presentation">
+    <div class="wrapper">
+      <div class="presentation__main section__main">
+        <h1 class="title title-h1">Отзывы</h1>
+      </div>
+    </div>
+  </section>
+  <section class="reviews section">
+    <div class="wrapper">
+      <div class="section__main reviews__main">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="@img/slide_img-review.png" alt="slide">
+              <div class="text-block">
+                <p class="subtitle subtitle-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="subtitle subtitle-lg">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="@img/slide_img-review.png" alt="slide">
+              <div class="text-block">
+                <p class="subtitle subtitle-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="subtitle subtitle-lg">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="@img/slide_img-review.png" alt="slide">
+              <div class="text-block">
+                <p class="subtitle subtitle-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="subtitle subtitle-lg">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="@img/slide_img-review.png" alt="slide">
+              <div class="text-block">
+                <p class="subtitle subtitle-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="subtitle subtitle-lg">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination swiper-pagination-reviews"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev swiper-button-prev-reviews">
+          <svg width="13" height="27" viewBox="0 0 13 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.300499 14.4164C-0.100166 13.9099 -0.100166 13.0915 0.300499 12.5836L9.80962 0.549658C10.388 -0.183219 11.3291 -0.183219 11.9085 0.549658C12.4869 1.28253 12.4869 2.47198 11.9085 3.20486L3.77396 13.5007L11.9085 23.7938C12.4869 24.528 12.4869 25.7175 11.9085 26.4503C11.3291 27.1832 10.388 27.1832 9.80962 26.4503L0.300499 14.4164Z" fill="black"/>
+          </svg>
+        </div>
+        <div class="swiper-button-next swiper-button-next-reviews">
+          <svg width="13" height="27" viewBox="0 0 13 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0418 12.5836C12.4425 13.0901 12.4425 13.9085 12.0418 14.4164L2.53266 26.4503C1.95426 27.1832 1.01321 27.1832 0.43379 26.4503C-0.144607 25.7175 -0.144607 24.528 0.43379 23.7951L8.56833 13.4993L0.43379 3.20617C-0.144607 2.47198 -0.144607 1.28253 0.43379 0.549656C1.01321 -0.183222 1.95426 -0.183222 2.53266 0.549656L12.0418 12.5836Z" fill="black"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  @@include('html/questions.html', {})
+</main>
+@@include('html/footer.html', {})
+<script src="js/app.min.js"></script>
+</body>
+</html>>

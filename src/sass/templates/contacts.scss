@@ -1,0 +1,45 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  @include md {
+    gap: 30px;
+  }
+  &__block {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &_item {
+    background: $black;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    @include md {
+      width: 30px;
+      height: 30px;
+      svg {
+        width: 60%;
+        height: 60%;
+      }
+    }
+    svg {
+      fill: $white;
+    }
+  }
+  &_phone {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.015em;
+    color: rgba($black, 0.9);
+    @include md {
+      font-size: 20px;
+      line-height: 29px;
+    }
+  }
+}

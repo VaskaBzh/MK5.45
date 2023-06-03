@@ -1,0 +1,41 @@
+.list {
+  display: flex;
+  justify-content: space-between;
+  @include sm {
+    flex-direction: column;
+  }
+  &_item {
+    display: inline-flex;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    align-items: center;
+    width: 100%;
+    .number {
+      font-weight: 600;
+      font-size: 140px;
+      line-height: 191px;
+      letter-spacing: -0.015em;
+      color: $grayLigth;
+      min-width: 81px;
+      text-align: center;
+    }
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    width: 100%;
+    @include sm {
+      max-width: 100%;
+    }
+    &:last-child {
+      margin-top: 60px;
+      @include sm {
+        margin: 0;
+      }
+    }
+  }
+}

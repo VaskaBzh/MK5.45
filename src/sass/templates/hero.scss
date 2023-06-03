@@ -1,0 +1,27 @@
+.hero {
+  margin: 24px 0 calc(112px / 2);
+  background-image: url('../../img/hero_img-back.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: calc(100% - 509px + 105px) 100%;
+  @include xs {
+    background-image: none;
+  }
+  .wrapper {
+    padding: 0 116px;
+  }
+  &__main {
+    padding: 75px 0 120px;
+    gap: 30px;
+    @include md {
+      padding: 0;
+    }
+    .button {
+      margin-top: 10px;
+      padding: 0 52px;
+    }
+    .title {
+      max-width: 509px;
+    }
+  }
+}

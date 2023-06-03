@@ -1,0 +1,12 @@
+.select {
+  min-height: 30px;
+  outline: none;
+  border: 1px solid $gray;
+  padding: 3px 10px;
+  background: $grayBack;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+}

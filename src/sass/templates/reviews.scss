@@ -1,0 +1,61 @@
+.reviews {
+  margin-bottom: 115px;
+  .wrapper {
+    padding: 0 115px;
+  }
+  &__main {
+    position: relative;
+  }
+  .swiper {
+    max-width: 1306px;
+    margin: 0 48px;
+    @include sm {
+      margin: 0;
+    }
+    &-wrapper {
+      width: 100%;
+    }
+    &-slide {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 60px;
+      align-items: center;
+      @include sm {
+        flex-direction: column;
+      }
+      .text-block {
+        padding-bottom: 0;
+      }
+    }
+    &-button-prev,
+    &-button-next {
+      @include sm {
+        top: calc(224px + 30px);
+      }
+    }
+    &-pagination {
+      bottom: -72px;
+      height: 20px;
+      gap: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include sm {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+      &-bullet {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: $grayLigth;
+        transition: $transition all ease 0s;
+        margin: 0;
+        &-active {
+          background: $gray;
+        }
+      }
+    }
+  }
+}

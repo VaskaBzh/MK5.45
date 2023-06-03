@@ -1,0 +1,77 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  .contacts {
+    display: none;
+  }
+  &_item {
+    padding: 5px 20px;
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    min-height: 57px;
+    letter-spacing: -0.015em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: $transition all ease 0s;
+    @include md {
+      min-height: 40px;
+    }
+    &:hover {
+      border: 2px solid $black;
+    }
+    &-active {
+      border: 2px solid $black;
+    }
+    &-back {
+      display: inline-flex;
+      cursor: pointer;
+      gap: 12px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 33px;
+      letter-spacing: -0.015em;
+      text-transform: uppercase;
+      margin-right: auto;
+      @include md {
+        margin: 0 auto;
+      }
+      svg {
+        width: 12px;
+        height: 27px;
+        fill: $black;
+      }
+    }
+  }
+  &-footer {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    @include md {
+      max-width: 100%;
+      justify-content: space-around;
+    }
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .nav {
+      &_item {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: -0.015em;
+        padding: 0;
+        min-height: fit-content;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.section {
+  margin: calc(112px / 2) 0 calc(112px / 2);
+  @include md {
+    margin: 30px 0;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include md {
+      gap: 20px;
+    }
+  }
+}
